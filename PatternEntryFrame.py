@@ -25,6 +25,7 @@ class PatternEntryFrame(Frame):
         self.entry.bind('<Prior>', lambda *args: self.broadcast('PageUp'))
         self.entry.bind('<Control-b>', lambda *args: self.broadcast('PageUp'))
         self.entry.bind('<Return>', lambda *args: self.broadcast('Return'))
+        self.entry.bind('<Escape>', lambda *args: self.broadcast('Esc'))
 
     def broadcast(self, key):
         if self.onKeyPress:

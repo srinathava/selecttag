@@ -69,6 +69,9 @@ def main():
             print tag.name
             print tag.file
             print tag.pattern
+            top.quit()
+        elif key == 'Esc':
+            top.quit()
         else:
             table.moveSelection(key)
 
